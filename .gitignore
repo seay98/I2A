@@ -1,0 +1,4 @@
+.ipynb_checkpoints/
+/algorithms/.idea/
+/algorithms/out/
+*.iml

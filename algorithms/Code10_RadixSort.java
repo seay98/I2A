@@ -7,8 +7,8 @@ public class Code10_RadixSort {
             return 0;
         }
         int max = A[0];
-        for (int i=0; i<A.length; i++) {
-            max = Math.max(max, A[i]);
+        for (int j : A) {
+            max = Math.max(max, j);
         }
         int res = 0;
         while (max != 0) {

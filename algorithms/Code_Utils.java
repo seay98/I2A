@@ -6,6 +6,17 @@ public class Code_Utils {
         System.out.println();
     }
 
+    public static int[] copyArr(int[] arr) {
+        if (arr==null) {
+            return null;
+        }
+        int[] copy = new int[arr.length];
+        for (int i=0; i<arr.length; i++) {
+            copy[i] = arr[i];
+        }
+        return copy;
+    }
+
     public static void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];

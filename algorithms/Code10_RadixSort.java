@@ -53,8 +53,8 @@ public class Code10_RadixSort {
         for (int i=0; i<testTimes; i++) {
             int[] arr = Code_Utils.generateRandomPositiveArray(maxSize, maxValue);
 //        int[] arr = {268, 325, 808, 566, 644, 165};
-            int[] arr1 = arr;
-            int[] arr2 = arr;
+            int[] arr1 = Arrays.copyOf(arr, arr.length);
+            int[] arr2 = Arrays.copyOf(arr, arr.length);
 //            Code_Utils.printArr(arr);
             Arrays.sort(arr1);
             RadixSort(arr2, 0, arr.length-1, HighestDigit(arr));

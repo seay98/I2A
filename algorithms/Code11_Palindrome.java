@@ -16,7 +16,7 @@ public class Code11_Palindrome {
         if (head == null) {
             return false;
         }
-        Stack<Node> stack = new Stack<Node>();
+        Stack<Node> stack = new Stack<>();
         Node cur = head;
         while (cur != null) {
             stack.push(cur);
@@ -51,7 +51,7 @@ public class Code11_Palindrome {
         // 将slow末端指向null，slow后的节点指向调转
         fast = slow.next; // mid of link
         slow.next = null;
-        Node rhead = null;
+        Node rhead;
         while (fast != null) {
             rhead = fast.next;
             fast.next = slow;
@@ -64,7 +64,7 @@ public class Code11_Palindrome {
         // 开始比较，fast从后向前， slow从前向后
         fast = slow;
         slow = head;
-        while (slow!=fast && slow!=null) {
+        while (fast!=null && slow!=null) {
             if (slow.value != fast.value) {
                 res = false;
                 break;

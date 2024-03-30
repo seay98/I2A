@@ -1,1 +1,1 @@
-Introduction to algorithms. Playground of basic algorithms following Zuo Shen.
+Introduction to algorithms. Playground of basic algorithms following Zuoshen and Heima.
